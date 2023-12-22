@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>forms tag</title>
+</head>
+<body>
+	<form action="form response.html" target="_blank" method="post" name="details">
+		<!--Method attribute is used for security and also hide the info in address bar by using (method="post")-->
+		<!--Input tag and its attributes are follows-->
+		UserName :<input type = "text" name="userName"  value="sai reddy" required>&nbsp;
+		Password :<input type = "password" name="password"  minlength="8" required> &nbsp;
+		Email    :<input type = "email" name="email"> &nbsp;<br><br>
+		City     :<input type="text" name="place">&nbsp;
+		phone Number:<input type="tel" name="mobile_num" maxlength="10"> &nbsp;
+		Age : <input type = "number" name="Age" min="18" max="64" step="2"><br><br>
+		
+		<input type="submit" value="Register">&nbsp;&nbsp;
+		<input type="button" value="Next" disabled>&nbsp;&nbsp;
+		<input type="reset">&nbsp;&nbsp;
+		Fav color :<input type="color" name="color">&nbsp;&nbsp;
+		<input type="hidden"><br><br>
+		<!--hidden type is not shown to users it is used for developers to hide content-->
+		Gender :
+		Male<input type="radio" name="gender" value="male">
+		Female<input type="radio" name="gender" value="female">
+		Transgender<input type="radio" name="gender" value="Trans">
+		<br><br>
+		
+		Languages known :
+		English<input type="checkbox" name="lang" value="en" checked>
+		Telugu<input type="checkbox" name="lang" value="te">
+		Hindi<input type="checkbox" name="lang" value="hi">
+		Tamil<input type="checkbox" name="lang" value="th">
+		<br><br>
+		
+		Range:
+		<input type="range" name="range">
+		<br><br>
+		
+		Date:
+		<input type="date" name="date">
+		<br><br>
+		
+		Upload file:
+		<input type="file" name="file">
+		<br><br>
+		
+		Search:
+		<input type="search">
+		<br><br>
+		
+		Time:
+		<input type="time" name="time">
+		<br><br>
+		
+		Month:
+		<input type="month" name="month">
+		<br><br>
+		
+		DateTime:
+		<input type="datetime-local" name="datetime">
+		<br><br>
+		
+		week:
+		<input type="week" name="week">
+		<br><br>
+		
+		URL:
+		<input type="url" name="profile_link">
+		<br><br>
+		
+		
+		<!--name=" " is used to send info to backend by using address tab in browser ,check address bar-->
+		<!--required = attribute is used to fill data mandatory!-->
+		<!-- value = attribute is used to fill block by default by developers-->
+		<!--checked = attribute is used to fill radio/checkbox options by default by developer-->
+		<!--readonly= attribute is which user cannot modify,it is restricted bt developer-->
+		
+		<!--textarea tag as follows-->
+		TextArea:<br>
+		<textarea cols="20" rows="4" name="review" value="remarks">
+			<!--text area field is used to get input from user(reviews, and other any type of description)(textarea Attributes=cols, rows, name,value -->
+		</textarea>
+		<br><br>
+		
+		<!--select tag as follows-->
+		Select city :
+		<select name="city" value="place">
+			<option>Hyderabad</option>
+			<option>chennai</option>
+			<option>Banglore</option>
+			<option>Mumbai</option>
+			<option>Kolkata</option>	
+			<option>Delhi</option>
+			<option>Pune</option>
+			<option>Indore</option>
+			<option>Nashik</option>
+			<option>Visakhapatnam</option>
+		</select>
+	</form>
+</body>
+</html>
